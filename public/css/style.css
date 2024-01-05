@@ -621,6 +621,18 @@ video {
   width: 1.5rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.max-w-20 {
+  max-width: 5rem;
+}
+
+.max-w-40 {
+  max-width: 10rem;
+}
+
 .grow {
   flex-grow: 1;
 }
