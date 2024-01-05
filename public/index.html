@@ -10,15 +10,18 @@
     <!-- For Header Top -->
     <div id="headerTop" class="bg-blue-700 pt-5 pb-5">
         <!-- For Navbar -->
-        <div id="Navbar" class="flex py-3 border justify-center items-center bg-slate-50 mx-5 rounded-full">
-            <h1 class="text-2xl px-2 px-4">SerenePOS</h1>
-            <div class="flex grow justify-center">
+        <div id="Navbar" class="flex py-3 border md:justify-center justify-between items-center bg-slate-50 mx-5 rounded-full">
+            <h1 class="text-2xl px-2 px-4 mx-2">SerenePOS</h1>
+            <div class="md:flex md:grow justify-center hidden">
                 <h1 class="text-lg py-2 px-4">About</h1>
                 <h1 class="text-lg mx-2 py-2 px-4">Features</h1>
                 <h1 class="text-lg mx-2 py-2 px-4">Pricing</h1>
             </div>
-            <h1 class="text-sm mx-2 py-2 px-4 border-slate-700 border rounded-full">Login</h1>
-            <h1 class="text-sm mx-2 py-2 px-4 bg-slate-900 text-slate-50 rounded-full">Register</h1>
+            <div class="md:flex hidden">
+                <h1 class="text-sm mx-2 py-2 px-4 border-slate-700 border rounded-full">Login</h1>
+                <h1 class="text-sm mx-2 py-2 px-4 bg-slate-900 text-slate-50 rounded-full">Register</h1>
+            </div>
+            <img src="/src/Icon/hamburger-menu-svgrepo-com.svg" alt="Menu" class="h-5 w-5 mx-4 md:hidden">
         </div>
         <!-- For Home -->
         <div class="my-28">
@@ -32,8 +35,8 @@
         </div>
     </div>
     <!-- For About - Details-->
-    <div class="m-2 flex items-center">
-        <div class="m-2">
+    <div class="m-2 grid grid-cols-1 md:grid-cols-3 items-center">
+        <div class="m-2 col-span-2">
             <h4 class="text-lg text-blue-700 m-5">DETAILS</h4>
             <h3 class="text-2xl m-5 font-bold">Streamline Your Operations</h3>
             <p class="m-5 text-lg">Our POS application simplifies your business processes, allowing you to focus on what matters most. 
@@ -50,22 +53,22 @@
         <h3 class="text-2xl m-5 font-bold text-center">Powerful Features for Your POS Application</h3>
         <p class="m-5 text-lg text-center">Unlock the potential of your business with our advanced POS application</p>
         <!-- For Features - Point -->
-        <div id="FeaturesPoint-Row1" class="grid grid-cols-2 items-center m-2">
-            <div class="bg-slate-50 p-2 m-2 h-full">
+        <div id="FeaturesPoint-Row1" class="grid grid-cols-1 md:grid-cols-2 items-center m-2">
+            <div class="bg-slate-50 p-2 m-2 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl">User-friendly interface</h3>
                 <p class="text-lg">Intuitive and easy-to-use interface for seamless navigation</p>
             </div>
-            <div class="bg-slate-50 p-2 m-2 h-full">
+            <div class="bg-slate-50 p-2 m-2 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl">Inventory management</h3>
                 <p class="text-lg">Efficiently track and manage inventory levels to prevent stockouts and overstocking</p>
             </div>
         </div>
-        <div id="FeaturesPoint-Row2" class="grid grid-cols-2 items-center m-2">
-            <div class="bg-slate-50 p-2 m-2 h-full">
+        <div id="FeaturesPoint-Row2" class="grid grid-cols-1 md:grid-cols-2 items-center m-2">
+            <div class="bg-slate-50 p-2 m-2 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl">Sales analytics</h3>
                 <p class="text-lg">Gain valuable insights into sales performance and customer behavior with comprehensive analytics</p>
             </div>
-            <div class="bg-slate-50 p-2 m-2 h-full">
+            <div class="bg-slate-50 p-2 m-2 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl">Secure payment processing</h3>
                 <p class="text-lg">Ensure secure and reliable payment processing for seamless transactions</p>
             </div>
@@ -77,8 +80,8 @@
         <h3 class="text-2xl m-5 font-bold text-center">GET THE SPECIAL PRICE</h3>
         <p class="m-5 text-lg text-center">We have some suitable plan for you</p>
         <!-- For PRICING - Point -->
-        <div id="FeaturesPoint-Row1" class="grid grid-cols-3 items-center">
-            <div class="bg-slate-300 p-2 m-2 h-full">
+        <div id="FeaturesPoint-Row1" class="grid md:grid-cols-3 grid-cols-1 items-center">
+            <div class="bg-slate-300 p-2 m-2 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl">FREE</h3>
                 <p class="text-lg">Want to try it first? We can give you free trial</p>
                 <ul class="list-disc list-inside">
@@ -88,7 +91,7 @@
                 </ul>
                 <h1 class="text-sm m-2 p-2 px-4 text-center border-slate-700 border rounded-full">Try 1 Month Free</h1>
             </div>
-            <div class="bg-slate-300 p-2 m-2 h-full">
+            <div class="bg-slate-300 p-2 m-2 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl">BASIC</h3>
                 <p class="text-lg">Ready to use the apps? We have basic plan for you?</p>
                 <ul class="list-disc list-inside">
@@ -98,7 +101,7 @@
                 </ul>
                 <h2 class="text-lg m-2 p-2 border-2 rounded-full text-center border-black bg-slate-900 text-white hover:bg-slate-800">Try the Basic plan</h2>
             </div>
-            <div class="bg-slate-300 p-2 m-2 h-full">
+            <div class="bg-slate-300 p-2 m-2 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl">PRO</h3>
                 <p class="text-lg">Want to have all of the features? We have Pro Plan for you.</p>
                 <ul class="list-disc list-inside">
@@ -121,11 +124,11 @@
     <!-- For Learn More -->
     <div class="bg-slate-50 py-10">
         <!-- For Learn More - Point -->
-        <div class="p-2 grid grid-cols-3">
+        <div class="p-2 grid md:grid-cols-3 grid-cols-1">
             <div class="p-2">
-                <h4 class="text-lg text-blue-700 m-5">FAQ</h4>
-                <h3 class="text-2xl m-5 font-bold">Common Questions</h3>
-                <p class="m-5 text-lg">Here are some of the most common questions that we get.</p>
+                <h4 class="text-lg text-blue-700 m-2">FAQ</h4>
+                <h3 class="text-2xl m-2 font-bold">Common Questions</h3>
+                <p class="m-2 text-lg">Here are some of the most common questions that we get.</p>
             </div>
             <!-- For Learn More - Point - Question -->
             <div class="p-2 m-2 col-span-2">
