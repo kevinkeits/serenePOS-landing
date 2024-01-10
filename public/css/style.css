@@ -551,8 +551,12 @@ video {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
+  z-index: 100;
   color: #fff;
+  background: rgba(255, 255, 255, 0.91);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
 }
 
 #Navbar #fontHeader {
@@ -572,12 +576,13 @@ video {
 
 #Navbar #headerLeft #borderColor{
   transition: 0.4s;
-  border-color: #1d4ed8;
+  border-color: #ffffff;
 }
 
 #Navbar #headerLeft #borderColor2{
   transition: 0.4s;
   background-color: #ffffff;
+  color: #000;
 }
 
 .fixed {
