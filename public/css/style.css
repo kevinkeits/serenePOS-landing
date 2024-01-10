@@ -544,55 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-#Navbar {
-  overflow: hidden;
-  padding: 30px 80px;
-  transition: 0.4s;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.91);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.3px);
-  -webkit-backdrop-filter: blur(7.3px);
-}
-
-#Navbar #fontHeader {
-  transition: 0.4s;
-  color: #ffffff;
-}
-
-#Navbar #logoColor {
-  transition: 0.4s;
-  color: #ffffff;
-}
-
-#Navbar #headerLeft {
-  transition: 0.4s;
-  color: #ffffff;
-}
-
-#Navbar #headerLeft #borderColor{
-  transition: 0.4s;
-  border-color: #ffffff;
-}
-
-#Navbar #headerLeft #borderColor2{
-  transition: 0.4s;
-  background-color: #ffffff;
-  color: #000;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -650,11 +601,6 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .my-28 {
@@ -716,6 +662,10 @@ video {
 
 .grow {
   flex-grow: 1;
+}
+
+.resize {
+  resize: both;
 }
 
 .list-inside {
@@ -780,6 +730,11 @@ video {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-blue-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
@@ -825,6 +780,11 @@ video {
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -833,14 +793,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
 }
 
 .object-center {
@@ -898,11 +850,6 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-4 {
@@ -983,6 +930,11 @@ video {
   font-weight: 600;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
@@ -996,11 +948,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(000 000 000 / var(--tw-text-opacity));
 }
 
 .hover\:rounded-full:hover {
@@ -1089,4 +1036,3 @@ video {
     padding-right: 9rem;
   }
 }
-
