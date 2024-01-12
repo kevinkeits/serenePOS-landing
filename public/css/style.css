@@ -544,6 +544,53 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+#Navbar {
+  overflow: hidden;
+  padding: 30px 80px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+#Navbar #fontHeader {
+  transition: 0.4s;
+  color: #ffffff;
+}
+
+#Navbar #logoColor {
+  transition: 0.4s;
+  color: #ffffff;
+}
+
+#Navbar #headerLeft {
+  transition: 0.4s;
+  color: #ffffff;
+}
+
+#Navbar #headerLeft #borderColor{
+  transition: 0.4s;
+  border-color: #ffffff;
+}
+
+#Navbar #headerLeft #borderColor2{
+  transition: 0.4s;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -554,6 +601,14 @@ video {
 
 .sticky {
   position: sticky;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .bottom-2 {
@@ -658,13 +713,10 @@ video {
   height: 2.5rem;
 }
 
-<<<<<<< Updated upstream
-=======
 .h-20 {
   height: 24.2rem;
 }
 
->>>>>>> Stashed changes
 .h-5 {
   height: 1.25rem;
 }
@@ -717,6 +769,10 @@ video {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -767,8 +823,6 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-<<<<<<< Updated upstream
-=======
 }
 
 .bg-green-200 {
@@ -804,7 +858,6 @@ video {
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191, 219, 254, var(--tw-bg-opacity));
->>>>>>> Stashed changes
 }
 
 .bg-blue-300 {
@@ -865,6 +918,14 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .object-center {
