@@ -52,6 +52,7 @@
           }
         }
     </script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <div id="headerTop" class="bg-blue-700 py-40">
         <!-- For Home -->
             <br>
@@ -94,12 +95,17 @@
         <div id="FeaturesPoint-Row1" class="grid grid-cols-1 md:grid-cols-2 items-center m-2 lg:mx-28">
             <div class="bg-slate-50 px-6 m-5 xl:my-10 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl py-5 text-center">Antarmuka yang Ramah Pengguna</h3>
-                <img src="/src/Image-Thumb/UserInterface-SerenePOS.png" alt="Dashboard" class="p-5 rounded-full">
+                <div class="flex items-center justify-center">
+                    <dotlottie-player src="https://lottie.host/79cd002c-fe8f-49e6-8389-60ec89821090/690ihaoJaO.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+                </div>
                 <p class="text-lg">Antarmuka yang Intuitif dan Mudah Digunakan untuk Navigasi yang Lancar.</p>
             </div>
-            <div class="bg-slate-50 px-6 m-5 xl:my-10 md:h-full rounded-lg">
+            <div class="bg-slate-50 px-6 m-5 xl:my-10 md:h-full rounded-lg ">
                 <h3 class="font-semibold text-2xl py-5 text-center">Manajemen Inventaris</h3>
-                <img src="/src/Image-Thumb/Analyze package shipments.jpeg" alt="Inventory Menu" class="p-5 rounded-full">
+                <!-- <img src="/src/Image-Thumb/Analyze package shipments.jpeg" alt="Inventory Menu" class="p-5 rounded-full"> -->
+                <div class="flex items-center justify-center">
+                    <dotlottie-player src="https://lottie.host/a5d5feb7-29b9-423d-ad77-c8b555df9c93/cPrczNL2Tv.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+                </div>
                 <p class="text-lg">Lacak dan kelola tingkat inventaris dengan efisien untuk mencegah kehabisan stok dan kelebihan persediaan</p>
             </div>
         </div>
@@ -107,12 +113,18 @@
         <div id="FeaturesPoint-Row2" class="grid grid-cols-1 md:grid-cols-2 items-center m-2 lg:mx-28">
             <div class="bg-slate-50 px-6 m-5 xl:my-10 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl py-5 text-center">Analisis Penjualan Mendalam</h3>
-                <img src="/src/Image-Thumb/Analysis.jpeg" alt="Analysis" class="p-5 rounded-full">
+                <!-- <img src="/src/Image-Thumb/Analysis.jpeg" alt="Analysis" class="p-5 rounded-full"> -->
+                <div class="flex items-center justify-center">
+                    <dotlottie-player src="https://lottie.host/b9ac1abc-f8b0-4190-bd22-b83a11a331a4/urXGiYUbVW.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+                </div>
                 <p class="text-lg">Dapatkan wawasan berharga mengenai kinerja penjualan dan perilaku pelanggan dengan analisis yang komprehensif</p>
             </div>
             <div class="bg-slate-50 px-6 m-5 xl:my-10 md:h-full rounded-lg">
                 <h3 class="font-semibold text-2xl py-5 text-center">Proses Pembayaran yang Aman</h3>
-                <img src="/src/Image-Thumb/Premium Vector _ Login and password.jpeg" alt="Secure Login" class="p-5 rounded-full">
+                <!-- <img src="/src/Image-Thumb/Premium Vector _ Login and password.jpeg" alt="Secure Login" class="p-5 rounded-full"> -->
+                <div class="flex items-center justify-center">
+                    <dotlottie-player src="https://lottie.host/353eb5cf-3efd-464b-9621-dc60a5bc6e00/XyXzd0uqf5.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+                </div>
                 <p class="text-lg">Memastikan pemrosesan pembayaran yang aman dan dapat diandalkan untuk transaksi yang lancar</p>
             </div>
         </div>
@@ -124,15 +136,17 @@
         <p class="m-5 text-lg text-center">Kami memiliki beberapa paket yang cocok untuk Anda</p>
         <!-- For PRICING - Point -->
         <div id="FeaturesPoint-Row1" class="grid md:grid-cols-3 grid-cols-1 mx-20 md:mx-20">
-            <div class="bg-blue-800 m-2 rounded-lg shadow-lg">
-                <h3 class="font-bold text-white text-2xl py-5 mx-5">FREE</h3>
-                <!-- For PRICING - Point - Price-->
-                <div class="m-2 py-4 items-center text-center text-white">
-                    <p class="m-2 text-4xl xl:text-2xl font-bold">Rp. 0,</p>
-                    <p>Per / Bulan</p>
+            <div class="bg-slate-50 m-2 rounded-lg shadow-lg relative">
+                <div class="bg-blue-600 rounded-t-lg pb-5 h-60">
+                    <h3 class="font-bold text-white text-2xl py-5 mx-5">FREE</h3>
+                    <!-- For PRICING - Point - Price-->
+                    <div class="m-2 py-4 items-center text-center text-white">
+                        <p class="m-2 text-4xl md:text-3xl xl:text-4xl font-bold">Rp. 0,</p>
+                        <p>Per / Bulan</p>
+                    </div>
                 </div>
-                <div class="bg-slate-50 relative p-5 md:px-5">
-                    <p class="text-lg">Ingin mencoba terlebih dahulu? Kami dapat memberikan paket per Outlet / Bulancobaan gratis</p>
+                <div class="bg-slate-50 p-5 md:px-5 h-96">
+                    <p class="text-lg">Ingin mencoba terlebih dahulu? Kami dapat memberikan paket per Outlet / Bulan</p>
                     <br>
                     <ul class="list-disc list-inside">
                         <li>Dashboard Penjualan</li>
@@ -142,24 +156,23 @@
                         <br>
                         <br>
                         <br>
-                        <br>
-                        <br>
-                        <br>
                     </ul>
-                    <div class="absolute bottom-2 left-0 min-w-full px-3">
-                        <h1 class="text-lg m-2 p-2 text-center bg-blue-800 text-white rounded-full font-semibold">Coba Gratis 1 Bulan</h1>
-                    </div>
                 </div> 
-            </div>
-            <div class="bg-blue-900 m-2 rounded-lg shadow-lg">
-                <!-- <center><span class="inline-flex items-center gap-x-1.5 py-1.5 px-8 rounded-b-lg text-xs mt-2 font-medium bg-green-600 text-white dark:bg-white font-semibold">Populer</span></center> -->
-                <h3 class="font-bold text-white text-2xl py-5 mx-5">PRO</h3>
-                <!-- For PRICING - Point - Price-->
-                <div class="m-2 py-4 items-center text-center text-white">
-                    <p class="m-2 text-4xl xl:text-2xl font-bold">Rp. 299.000,-</p>
-                    <p>Per / Bulan</p>
+                <div class="absolute bottom-2 left-0 min-w-full px-3">
+                    <h1 class="text-lg m-2 p-2 text-center bg-blue-600 text-white rounded-full font-semibold">Coba Gratis</h1>
                 </div>
-                <div class="bg-slate-50 relative p-5 md:px-5">
+            </div>
+            <div class="bg-slate-50 m-2 rounded-lg shadow-lg relative">
+                <!-- <center><span class="inline-flex items-center gap-x-1.5 py-1.5 px-8 rounded-b-lg text-xs mt-2 font-medium bg-green-600 text-white dark:bg-white font-semibold">Populer</span></center> -->
+                <div class="bg-blue-900 rounded-t-lg pb-5 h-60">
+                    <h3 class="font-bold text-white text-2xl py-5 mx-5">PRO</h3>
+                    <!-- For PRICING - Point - Price-->
+                    <div class="m-2 py-4 items-center text-center text-white">
+                        <p class="m-2 text-4xl md:text-3xl xl:text-4xl font-bold">Rp. 299.000,-</p>
+                        <p>Per / Bulan</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-5 md:px-5">
                     <p class="text-lg">Ingin memiliki semua fitur yang tersedia tanpa batasan? Kami memiliki paket Pro untuk anda</p>
                     <br>
                         <ul class="list-disc list-inside">
@@ -174,21 +187,22 @@
                             <br>
                             <br>
                         </ul>
-                    <div class="absolute bottom-2 left-0 min-w-full px-3">
-                        <h1 class="text-lg m-2 p-2 text-center bg-blue-900 text-white rounded-full font-semibold">Coba paket Pro</h1>
-                    </div>
                 </div> 
-            </div>
-            <div class="bg-blue-800 m-2 rounded-lg shadow-lg">
-                <h3 class="font-bold text-white text-2xl py-5 mx-5">BASIC</h3>
-                <!-- For PRICING - Point - Price-->
-                <div class="m-2 py-4 items-center text-center text-white">
-                    <p class="m-2 text-4xl xl:text-2xl font-bold">Rp. 199.000,-</p>
-                    <p>Per / Bulan</p>
+                <div class="absolute bottom-2 left-0 min-w-full px-3">
+                    <h1 class="text-lg m-2 p-2 text-center bg-blue-900 text-white rounded-full font-semibold">Coba paket Pro</h1>
                 </div>
-                <div class="bg-slate-50 relative p-5 md:px-5">
-                    <p class="text-lg">Siap untuk menggunakan Aplikasi? Kami memiliki paket Basic untuk anda</p>
-                    <br>
+            </div>
+            <div class=" bg-slate-50 m-2 rounded-lg shadow-lg relative" >
+                <div class="bg-blue-800 rounded-t-lg h-60">
+                    <h3 class="font-bold text-white text-2xl py-5 mx-5">BASIC</h3>
+                    <!-- For PRICING - Point - Price-->
+                    <div class="m-2 py-4 items-center text-center text-white">
+                        <p class="m-2 text-4xl md:text-3xl xl:text-4xl font-bold">Rp. 199.000,-</p>
+                        <p>Per / Bulan</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-5 md:px-5">
+                    <p class="text-lg mt-2 mb-10">Siap untuk menggunakan Aplikasi? Kami memiliki paket Basic untuk anda</p>
                     <ul class="list-disc list-inside">
                         <li>Dashboard Penjualan</li>
                         <li>Management Produk</li>
@@ -198,13 +212,11 @@
                         <br>
                         <br>
                         <br>
-                        <br>
-                        <br>
                     </ul>
-                    <div class="absolute bottom-2 left-0 min-w-full px-3">
-                        <h1 class="text-lg m-2 p-2 text-center bg-blue-800 text-white rounded-full font-semibold">Coba paket Basic</h1>
-                    </div>
                 </div> 
+                <div class="absolute bottom-2 left-0 min-w-full px-3">
+                    <h1 class="text-lg m-2 p-2 text-center bg-blue-800 text-white rounded-full font-semibold">Coba paket Basic</h1>
+                </div>
             </div>
         </div>
         <h3 class="text-2xl m-5 font-bold text-center mt-20 mb-20">FEATURES COMPARISON</h3>
@@ -214,14 +226,14 @@
             <div class="p-2 col-span-2 rounded-lg">
                 
             </div>
-            <div class="p-2 mx-2 bg-blue-300 rounded-lg">
-                <h3 class="p-2 font-semibold text-2xl text-center">Free</h3>
+            <div class="p-2 mx-2 bg-blue-600 rounded-lg">
+                <h3 class="p-2 font-semibold text-2xl text-center text-white">Free</h3>
             </div>
-            <div class="p-2 mx-2 bg-blue-400 rounded-lg">
-                <h3 class="p-2 font-semibold text-2xl bg-blue-400 text-center">Basic</h3>
+            <div class="p-2 mx-2 bg-blue-800 rounded-lg">
+                <h3 class="p-2 font-semibold text-2xl text-center text-white">Basic</h3>
             </div>
-            <div class="p-2 mx-2 bg-blue-500 rounded-lg">
-                <h3 class="p-2 font-semibold text-2xl  text-center">Pro</h3>
+            <div class="p-2 mx-2 bg-blue-900 rounded-lg">
+                <h3 class="p-2 font-semibold text-2xl text-white text-center">Pro</h3>
             </div>                     
         </div>
         <!-- For PRICING - Features Comparison - Dashboard Penjualan --> 
