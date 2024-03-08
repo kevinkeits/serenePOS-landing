@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './Navbar';
+import MainTittle from './MainTittle';
 
 
 
 const Homepage = () => {
   return (
-    <div>
-       <Navbar/>
+    <div className='relative bg-blue-700 py-40'>
+       <MainTittle/>
     </div>
     
   )
