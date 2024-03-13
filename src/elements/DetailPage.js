@@ -1,4 +1,5 @@
 import React from 'react'
+import payimg from '../assets/images/Pay.png'
 
 const DetailPage = () => {
   return (
@@ -10,6 +11,9 @@ const DetailPage = () => {
           <p className='m-5 text-lg'>Dengan Aplikasi POS Kami, Nikmati Kemudahan Manajemen Inventaris, Pencatatan Transaksi Cepat, 
           dan Analisis Penjualan yang Akurat. Maksimalkan Efisiensi Bisnismu, Tingkatkan Pengalaman Pelanggan, 
           dan Dorong Pertumbuhan dengan Teknologi POS Terkini!</p>
+        </div>
+        <div className='m-2'>
+          <img src={payimg} alt="Pay" class=""/>
         </div>
       </div>      
     </div>
