@@ -2,7 +2,7 @@ import React from 'react'
 
 const Homepage = () => {
   return (
-    <div className='bg-blue-700 py-40'>
+    <div className='bg-blue-700 py-40  h-screen'>
       <div className='my-28 lg:px-10 lg:mx-28'>
         <h1 className='text-6xl lg:text-8xl py-5 mx-10 mt-10 text-center font-bold text-slate-50'>SerenePOS</h1>
         <h1 className='text-xl align-middle m-5 text-center text-slate-50'>Optimalkan Bisnismu dengan Kemudahan dan Efisiensi Bersama Aplikasi POS Kami – Transformasi Penjualan Menjadi Pengalaman yang Lebih Baik</h1>
