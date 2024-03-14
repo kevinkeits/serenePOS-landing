@@ -3,7 +3,7 @@ import { DotLottiePlayer } from '@dotlottie/react-player';
 
 const FiturPage = () => {
   return (
-    <div className='bg-slate-100 py-10 xl:px-28'>
+    <div id='fiturPage' className='bg-slate-100 py-10 xl:px-28'>
       <p className='text-lg text-blue-700 m-5 text-center font-bold mt-10'>FITUR</p>
       <p className='text-4xl m-5 font-bold text-center'>Fitur-fitur Unggulan untuk Aplikasi POS Anda.</p>
       <p className='m-5 mb-28 text-lg text-center'>Buka potensi bisnis Anda dengan aplikasi POS canggih kami.</p>

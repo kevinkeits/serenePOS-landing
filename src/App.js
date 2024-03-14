@@ -13,7 +13,7 @@ import FooterPage from './elements/FooterPage';
 
 function App() {
   return (
-    <div className="App relative bg-blue-700">
+    <div className="App ">
       <Navbar/>
       <Homepage/>
       <DetailPage/>

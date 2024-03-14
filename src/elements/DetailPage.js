@@ -3,7 +3,7 @@ import payimg from '../assets/images/Pay.png'
 
 const DetailPage = () => {
   return (
-    <div className='bg-white pt-5 pb-5'>
+    <div id='detailPage' className='bg-white pt-5 pb-5'>
       <div className='m-2 py-20 lg:px-10 lg:mx-28  grid grid-cols-1 md:grid-cols-3 items-center'>
         <div className='m-2 col-span-2'>
           <h1 className='text-lg text-blue-700 m-5 font-bold'>DETAIL</h1>
