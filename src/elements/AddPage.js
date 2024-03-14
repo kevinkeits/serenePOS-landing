@@ -8,8 +8,8 @@ const AddPage = () => {
       <p className='text-2xl m-5 font-bold text-center text-slate-50'>Solusi All-in-One</p>
       <p className='m-5 text-lg text-center text-slate-50'>Kelola penjualan, inventaris, dan data pelanggan dengan lancar</p>
       <div className='flex justify-center items-center'>
-        <img src={googleplay} alt="Google Play" class="m-2"/>
-        <img src={appstore} alt="App Store" class="m-2"/>
+        <img src={googleplay} alt="Google Play" class="m-2 h-40 md:h-52"/>
+        <img src={appstore} alt="App Store" class="m-2 h-40 md:h-52"/>
       </div>
     </div>
   )

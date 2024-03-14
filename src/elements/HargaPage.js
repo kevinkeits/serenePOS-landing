@@ -84,14 +84,14 @@ const HargaPage = () => {
       <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 lg:mx-28'>
         <div className='p-2 col-span-2 rounded-lg'>
         </div>
-        <div className='p-2 mx-2 bg-blue-600 rounded-lg'>
-          <p className='p-2 font-semibold text-2xl text-center text-white'>Free</p>
+        <div className='p-2 mx-1 md:mx-2 bg-blue-600 rounded-lg'>
+          <p className='p-2 font-semibold md:text-2xl text-center text-white'>Free</p>
         </div>
-        <div className='p-2 mx-2 bg-blue-800 rounded-lg'>
-          <p className='p-2 font-semibold text-2xl text-center text-white'>Basic</p>
+        <div className='p-2 mx-1 md:mx-2 bg-blue-800 rounded-lg'>
+          <p className='p-2 font-semibold md:text-2xl text-center text-white'>Basic</p>
         </div>
-        <div className='p-2 mx-2 bg-blue-900 rounded-lg'>
-          <p className='p-2 font-semibold text-2xl text-white text-center'>Pro</p>
+        <div className='p-2 mx-1 md:mx-2 bg-blue-900 rounded-lg'>
+          <p className='p-2 font-semibold md:text-2xl text-white text-center'>Pro</p>
         </div>
       </div>
       <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
