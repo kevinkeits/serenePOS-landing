@@ -131,7 +131,7 @@ const HargaPage = () => {
           <p className='p-2 text-lg'>Absensi</p>
         </div>
         <div className=' flex justify-center bg-slate-100 h-full items-center'>
-          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
         </div>
         <div className=' flex justify-center bg-slate-100 h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
@@ -143,7 +143,7 @@ const HargaPage = () => {
           <p className='p-2 text-lg'>Pengaturan Karyawan</p>
         </div>
         <div className=' flex justify-center h-full items-center'>
-          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
         </div>
         <div className=' flex justify-center h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
@@ -160,7 +160,7 @@ const HargaPage = () => {
           <p className='p-2 text-lg'>Database Pelanggan</p>
         </div>
         <div className=' flex justify-center bg-slate-100 h-full items-center'>
-          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
         </div>
         <div className=' flex justify-center bg-slate-100 h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
@@ -172,7 +172,7 @@ const HargaPage = () => {
           <p className='p-2 text-lg'>Loyalty Program</p>
         </div>
         <div className=' flex justify-center h-full items-center'>
-          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
         </div>
         <div className=' flex justify-center h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
@@ -213,7 +213,7 @@ const HargaPage = () => {
           <p className='p-2 text-lg'>Pengingat Stok</p>
         </div>
         <div className=' flex justify-center bg-slate-100 h-full items-center'>
-          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
         </div>
         <div className=' flex justify-center bg-slate-100 h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
@@ -221,17 +221,81 @@ const HargaPage = () => {
         <div className=' flex justify-center bg-slate-100 h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
         </div>
-        <div className='p-2 col-span-2 bg-slate-100'>
-          <p className='p-2 text-lg'>Transaksi</p>
+      </div>
+      <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
+        <div className='p-2 col-span-2'>
+          <p className='p-2 font-semibold text-2xl'>Transaksi</p>
         </div>
-        <div className=' flex justify-center bg-slate-100 h-full items-center'>
+        <div className=' flex justify-center h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
           <p className='text-center text-lg'>(7 Hari)</p>
         </div>
-        <div className=' flex justify-center bg-slate-100 h-full items-center'>
+        <div className=' flex justify-center h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
         </div>
-        <div className=' flex justify-center bg-slate-100 h-full items-center'>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+        </div>
+      </div>
+      <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
+        <div className='p-2 col-span-2'>
+          <p className='p-2 font-semibold text-2xl'>Daily Recap by Email</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+        </div>
+      </div>
+      <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
+        <div className='p-2 col-span-2'>
+          <p className='p-2 font-semibold text-2xl'>Laporan Penjualan</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <p className='text-center text-lg'>(App Only)</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <p className='text-center text-lg'>(App + Web)</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <p className='text-center text-lg'>(App + Web)</p>
+        </div>
+      </div>
+      <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
+        <div className='p-2 col-span-2'>
+          <p className='p-2 font-semibold text-2xl'>Management Outlet</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <p className='text-center text-lg'>(1 Outlet)</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <p className='text-center text-lg'>(5 Outlet)</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
+          <p className='text-center text-lg'>(Unlimited)</p>
+        </div>
+      </div>
+      <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
+        <div className='p-2 col-span-2'>
+          <p className='p-2 font-semibold text-2xl'>Pesan dari Meja</p>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
+          <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
+        </div>
+        <div className=' flex justify-center h-full items-center'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
         </div>
       </div>

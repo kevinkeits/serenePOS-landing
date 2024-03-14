@@ -17,7 +17,7 @@ const FooterPage = () => {
           <p className='text-slate-50'>Copyright © 2024. PT Teman Digital Indonesia. All Rights Reserved.</p>
         </div>
         <div className='flex px-2 py-2'>
-          <img src={insta} alt="App Store" class="m-2 w-8 h-8"/>
+          <a href='https://www.instagram.com/serenitycoffee.id/' target='_blank'><img src={insta} alt="App Store" class="m-2 w-8 h-8"/></a>
           <img src={linkedin} alt="App Store" class="m-2 w-8 h-8"/>
         </div>
         

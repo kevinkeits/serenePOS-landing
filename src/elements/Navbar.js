@@ -1,4 +1,5 @@
 import React from 'react'
+import hamburgmenu from '../assets/icon/hamburger-menu-svgrepo-com.svg'
 
 const Navbar = () => {
   return (
@@ -13,6 +14,7 @@ const Navbar = () => {
         <p className='text-sm text-white mx-2 py-2 px-4 border-white border rounded-full'>Masuk</p>
         <p className='text-sm mx-2 py-2 px-4 bg-white text-black rounded-full'>Daftar</p>
       </div>
+      <img src={hamburgmenu} alt="Menu" class="h-5 w-5 mx-4 md:hidden"/>
     </div>
   )
 }
