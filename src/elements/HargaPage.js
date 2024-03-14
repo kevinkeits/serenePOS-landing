@@ -8,7 +8,7 @@ const HargaPage = () => {
       <h5 className='text-lg text-blue-700 m-5 text-center font-bold'>HARGA</h5>
       <p className='text-2xl m-5 font-bold text-center'>Dapatkan harga Spesial</p>
       <p className='m-5 text-lg text-center'>Kami memiliki beberapa paket yang cocok untuk Anda</p>
-      <div className='grid md:grid-cols-3 grid-cols-1 mx-20 md:mx-20'>
+      <div className='grid md:grid-cols-3 grid-cols-1 mx-6 sm:mx-12 lg:mx-20'>
         {/* For Pricing Point */}
         <div className='bg-slate-50 m-2 rounded-lg shadow-lg relative'>
           <div className='bg-blue-600 rounded-t-lg pb-5 h-60'>
@@ -39,7 +39,7 @@ const HargaPage = () => {
               <p>Per / Bulan</p>
             </div>
           </div>
-          <div className='bg-slate-50 p-5 md:px-5'>
+          <div className='bg-slate-50 p-5 md:px-5 h-96'>
             <p className='text-lg'>Ingin memiliki semua fitur yang tersedia tanpa batasan? Kami memiliki paket Pro untuk anda</p>
             <ul className='list-disc list-inside'>
               <li>Dashboard Penjualan</li>
@@ -50,8 +50,6 @@ const HargaPage = () => {
               <li>Laporan Penjualan</li>
               <li>Management Outlet</li>
             </ul>
-            <br/>
-            <br/>
           </div>
           <div className='absolute bottom-2 left-0 min-w-full px-3'>
             <p className='text-lg m-2 p-2 text-center bg-blue-900 text-white rounded-full font-semibold'>Coba paket Pro</p>
@@ -65,7 +63,7 @@ const HargaPage = () => {
               <p>Per / Bulan</p>
             </div>
           </div>
-          <div className='bg-slate-50 p-5 md:px-5'>
+          <div className='bg-slate-50 p-5 md:px-5 h-96'>
             <p className='text-lg'>Siap untuk menggunakan Aplikasi? Kami memiliki paket Basic untuk anda</p>
             <ul className='list-disc list-inside'>
               <li>Dashboard Penjualan</li>
@@ -238,16 +236,16 @@ const HargaPage = () => {
         </div>
       </div>
       <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
-        <div className='p-2 col-span-2'>
+        <div className='p-2 col-span-2 bg-slate-100'>
           <p className='p-2 font-semibold text-2xl'>Daily Recap by Email</p>
         </div>
-        <div className=' flex justify-center h-full items-center'>
+        <div className=' flex justify-center h-full items-center bg-slate-100'>
           <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
         </div>
-        <div className=' flex justify-center h-full items-center'>
+        <div className=' flex justify-center h-full items-center bg-slate-100'>
           <img src={cross} alt="cross" class="w-5 h-5 m-2"/>
         </div>
-        <div className=' flex justify-center h-full items-center'>
+        <div className=' flex justify-center h-full items-center bg-slate-100'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
         </div>
       </div>
@@ -269,18 +267,18 @@ const HargaPage = () => {
         </div>
       </div>
       <div className='p-2 m-2 h-full rounded-lg grid grid-cols-5 items-center lg:mx-28 '>
-        <div className='p-2 col-span-2'>
+        <div className='p-2 col-span-2 bg-slate-100'>
           <p className='p-2 font-semibold text-2xl'>Management Outlet</p>
         </div>
-        <div className=' flex justify-center h-full items-center'>
+        <div className=' flex justify-center h-full items-center bg-slate-100'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
           <p className='text-center text-lg'>(1 Outlet)</p>
         </div>
-        <div className=' flex justify-center h-full items-center'>
+        <div className=' flex justify-center h-full items-center bg-slate-100'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
           <p className='text-center text-lg'>(5 Outlet)</p>
         </div>
-        <div className=' flex justify-center h-full items-center'>
+        <div className=' flex justify-center h-full items-center bg-slate-100'>
           <img src={ceklis} alt="Check" class="w-5 h-5 m-2"/>
           <p className='text-center text-lg'>(Unlimited)</p>
         </div>
