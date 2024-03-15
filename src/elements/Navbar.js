@@ -1,15 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import hamburgmenu from '../assets/icon/hamburger-menu-svgrepo-com.svg'
+import serenelogo from '../assets/icon/navbarlogo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className='fixed z-20 top-0 w-screen'>
-      <div className='flex backdrop-blur-md bg-black bg-opacity-20 md:justify-center justify-between items-center lg:px-28 lg:py-5 font-semibold'>
-        <h1 className='text-2xl text-white px-4 mx-2 py-3'>SerenePOS</h1>
-        <div className='md:flex md:grow justify-center hidden'>
-          <a href="#detailPage"><h1 className='text-lg text-white mx-2 py-2 px-4'>Tentang</h1></a>
+    <div className={`fixed z-20 top-0 w-screen ${isScrolled ? 'bg-white' : ''}`}>
+      <div className='flex md:justify-center justify-between items-center max-w-6xl mx-auto font-semibold'>
+        <img src={serenelogo} alt='logo' className={`w-40 mx-3 py-2 ${isScrolled ? '' : ''}`}/>
+        <div className={`md:flex md:grow justify-center hidden `}>
+          <a href="#detailPage"><h1 className={`text-lg text-white mx-2 py-2 px-4 ${isScrolled ? 'bg-blue-400 text-blue-600' : ''}`}>Tentang</h1></a>
           <a href="#fiturPage"><h1 className='text-lg text-white mx-2 py-2 px-4'>Fitur</h1></a>
           <a href="#hargaPage"><h1 className='text-lg text-white mx-2 py-2 px-4'>Harga</h1></a>
         </div>
@@ -29,7 +42,7 @@ const Navbar = () => {
           </div>
         )}
     </div>
-  )
-}
+  );
+};
 
 export default Navbar
