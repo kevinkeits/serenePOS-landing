@@ -35,3 +35,11 @@
     transform: rotate(360deg);
   }
 }
+
+#Navbar {
+  transition: background-color 0.5s ease; /* Add transitions for other properties if needed */
+}
+
+.scrolled {
+  background-color: #fff; /* Change to the desired background color */
+}

@@ -4,31 +4,48 @@ import serenelogo from '../assets/icon/navbarlogo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener('scroll', handleScroll);
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 80 || scrollPosition > 890) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
 
+    window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <div className={`fixed z-20 top-0 w-screen ${isScrolled ? 'bg-white' : ''}`}>
+    <div id="Navbar" className={`fixed z-20 top-0 w-screen ${scrolled ? 'scrolled' : ''}`}>
       <div className='flex md:justify-center justify-between items-center max-w-6xl mx-auto font-semibold'>
-        <img src={serenelogo} alt='logo' className={`w-40 mx-3 py-2 ${isScrolled ? '' : ''}`}/>
-        <div className={`md:flex md:grow justify-center hidden `}>
-          <a href="#detailPage"><h1 className={`text-lg text-white mx-2 py-2 px-4 ${isScrolled ? 'bg-blue-400 text-blue-600' : ''}`}>Tentang</h1></a>
-          <a href="#fiturPage"><h1 className='text-lg text-white mx-2 py-2 px-4'>Fitur</h1></a>
-          <a href="#hargaPage"><h1 className='text-lg text-white mx-2 py-2 px-4'>Harga</h1></a>
+        <div className={`${scrolled ? 'filter-effect' : ''}`}>
+          <img src={serenelogo} alt='logo' className="w-40 mx-3 py-2" style={{ filter: scrolled ? 'invert(70%) sepia(89%) saturate(2273%) hue-rotate(217deg) brightness(104%) contrast(96%)' : 'none' }}></img>
         </div>
-        <div className='md:flex hidden mx-3 px-4'>
-          <p className='text-sm text-white mx-1 py-2 px-4 border-white border rounded-full'>Masuk</p>
-          <p className='text-sm mx-1 py-2 px-4 bg-white text-black rounded-full'>Daftar</p>
+        <div className={`md:flex md:grow justify-center text-white hidden `}>
+          <div className={`hover:cursor-pointer ${scrolled ? 'text-black' : ''}`}>
+            <a href="#detailPage"><h1 className="text-lg mx-2 py-2 px-4">Tentang</h1></a>
+          </div>
+          <div className={`hover:cursor-pointer ${scrolled ? 'text-black' : ''}`}>
+            <a href="#fiturPage"><h1 className='text-lg mx-2 py-2 px-4'>Fitur</h1></a>
+          </div>
+          <div className={`hover:cursor-pointer ${scrolled ? 'text-black' : ''}`}>
+            <a href="#hargaPage"><h1 className='text-lg mx-2 py-2 px-4'>Harga</h1></a>
+          </div>
+        </div>
+        <div className='md:flex text-white hidden mx-3 px-4'>
+          <div id="borderColor" className={`text-sm py-2 px-4 rounded-full hover:text-black hover:cursor-pointer hover:bg-slate-100 mx-2 ${scrolled ? 'text-blue-600' : ''}`}>
+            <p className=''>Masuk</p>
+          </div>
+          <div id="borderColor" className={`text-sm my-auto py-2 px-4 bg-white hover:text-black hover:bg-slate-100 text-black hover:cursor-pointer rounded-full ${scrolled ? 'text-white bg-blue-500' : ''}`}>
+            <p className=''>Daftar</p>
+          </div>
         </div>
         {/* <!-- Hamburg Menu --> */}
         <img src={hamburgmenu} alt="Menu" onClick={() => setIsOpen(!isOpen)} class="h-6 w-10 mx-6 block md:hidden"/>
