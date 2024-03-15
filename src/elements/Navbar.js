@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className='fixed z-20 top-0 w-screen'>
-      <div className='flex backdrop-blur-md bg-black bg-opacity-15 md:justify-center justify-between items-center lg:px-28 lg:py-5 font-semibold'>
+      <div className='flex backdrop-blur-md bg-black bg-opacity-20 md:justify-center justify-between items-center lg:px-28 lg:py-5 font-semibold'>
         <h1 className='text-2xl text-white px-4 mx-2 py-3'>SerenePOS</h1>
         <div className='md:flex md:grow justify-center hidden'>
           <a href="#detailPage"><h1 className='text-lg text-white mx-2 py-2 px-4'>Tentang</h1></a>

@@ -22,8 +22,8 @@ const Homepage = () => {
         <h1 className='text-2xl xl:text-4xl align-middle m-5 py-4 px-2 text-center font-medium text-white'>Optimalkan Bisnismu dengan Kemudahan dan Efisiensi Bersama Aplikasi POS Kami – Transformasi Penjualan Menjadi Pengalaman yang Lebih Baik</h1>
       </div>
       <div className='flex items-center justify-center'>
-        <p className='text-xl m-1 md:m-3 p-2 md:p-5 w-40 md:w-60 text-white border-2 rounded-full font-semibold hover:bg-white hover:text-blue-600'>Mulai Sekarang</p>
-        <h1 className='text-xl m-1 md:m-3 p-2 md:p-5 w-40 md:w-60 rounded-full text-center font-semibold border-2 border-blue-600 bg-blue-600 hover:bg-white hover:text-blue-600 hover:border-white'>Coba Gratis</h1>
+        <p className='text-xl m-1 md:m-3 p-2 md:p-5 w-40 md:w-60 text-white border-2 rounded-full font-semibold hover:bg-blue-600 hover:border-blue-600'>Mulai Sekarang</p>
+        <h1 className='text-xl m-1 md:m-3 p-2 md:p-5 w-40 md:w-60 rounded-full text-center font-semibold border-2 border-white bg-white text-blue-600 hover:bg-blue-600 hover:border-blue-600 hover:text-white'>Coba Gratis</h1>
       </div>
       </div>
       
