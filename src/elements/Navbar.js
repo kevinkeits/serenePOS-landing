@@ -43,12 +43,12 @@ const Navbar = () => {
           <div id="borderColor" className={`text-sm py-2 px-4 rounded-full hover:text-black hover:cursor-pointer hover:bg-slate-100 mx-2 ${scrolled ? 'text-blue-600' : ''}`}>
             <p className=''>Masuk</p>
           </div>
-          <div id="borderColor" className={`text-sm my-auto py-2 px-4 bg-white hover:text-black hover:bg-slate-100 text-black hover:cursor-pointer rounded-full ${scrolled ? 'text-white bg-blue-500' : ''}`}>
+          <div id="borderColor" className={`text-sm my-auto py-2 px-4 hover:text-black hover:bg-slate-100 hover:cursor-pointer rounded-full ${scrolled ? ' text-blue-600' : ''}`}>
             <p className=''>Daftar</p>
           </div>
         </div>
         {/* <!-- Hamburg Menu --> */}
-        <img src={hamburgmenu} alt="Menu" onClick={() => setIsOpen(!isOpen)} class="h-6 w-10 mx-6 block md:hidden"/>
+        <img src={hamburgmenu} alt="Menu" onClick={() => setIsOpen(!isOpen)} class="h-6 w-10 mx-6 block md:hidden" style={{ filter: scrolled ? 'invert(70%) sepia(89%) saturate(2273%) hue-rotate(217deg) brightness(104%) contrast(96%)' : 'none' }}></img>
       </div>
       
       {isOpen && ( 
