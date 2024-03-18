@@ -39,11 +39,11 @@ const Navbar = () => {
             <a href="#hargaPage"><h1 className='text-lg mx-2 py-2 px-4'>Harga</h1></a>
           </div>
         </div>
-        <div className='md:flex text-white hidden mx-3 px-4'>
+        <div className='md:flex items-center text-white hidden mx-3 px-4'>
           <div id="borderColor" className={`text-sm py-2 px-4 rounded-full hover:text-black hover:cursor-pointer hover:bg-slate-100 mx-2 ${scrolled ? 'text-blue-600' : ''}`}>
             <p className=''>Masuk</p>
           </div>
-          <div id="borderColor" className={`text-sm my-auto py-2 px-4 hover:text-black hover:bg-slate-100 hover:cursor-pointer rounded-full ${scrolled ? ' text-blue-600' : ''}`}>
+          <div id="borderColor" className={`text-sm my-auto py-2 px-4 border-2  hover:bg-blue-800 hover:border-blue-800 hover:cursor-pointer rounded-full ${scrolled ? ' text-white bg-blue-600 hover:border-blue-800 border-2' : ''}`}>
             <p className=''>Daftar</p>
           </div>
         </div>
