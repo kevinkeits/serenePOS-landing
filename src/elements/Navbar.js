@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <div id="Navbar" className={`fixed z-20 top-0 w-screen ${scrolled ? 'scrolled' : ''}`}>
-      <div className='flex md:justify-center justify-between items-center max-w-6xl mx-auto font-semibold'>
-        <div className={`${scrolled ? 'filter-effect' : ''}`}>
-          <img src={serenelogo} alt='logo' className="w-40 mx-3 py-2" style={{ filter: scrolled ? 'invert(70%) sepia(89%) saturate(2273%) hue-rotate(217deg) brightness(104%) contrast(96%)' : 'none' }}></img>
+      <div className='flex  md:justify-center justify-between items-center max-w-6xl mx-auto font-semibold'>
+        <div className={`${scrolled ? ' filter-effect' : ''}`}>
+          <img src={serenelogo} alt='logo' className="w-40 mx-3 py-2 " style={{ filter: scrolled ? ' invert(70%) sepia(89%) saturate(2273%) hue-rotate(217deg) brightness(104%) contrast(96%)' : 'none' }}></img>
         </div>
         <div className={`md:flex md:grow justify-center text-white hidden `}>
           <div className={`hover:cursor-pointer ${scrolled ? 'text-black' : ''}`}>
